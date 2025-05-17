@@ -61,7 +61,7 @@ form.addEventListener('submit', (event) => {
   const email = document.getElementById('comment').value;
   const user = { name, surname, phone, email };
   setLocalStorage(user);
-  event.target.elemets.name.value = '';
+  event.target.elemets.username.value = '';
   event.target.elemets.surname.value = '';
   event.target.elemets.telephone.value = '';
   event.target.elemets.email.value = '';
