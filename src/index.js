@@ -54,6 +54,7 @@
   const form = document.querySelector('.submit');
 
 form.addEventListener('submit', (event) => {
+  event.preventDefault();
   const name = document.getElementById('name').value;
   const surname = document.getElementById('phone').value;
   const phone = document.getElementById('email').value;
