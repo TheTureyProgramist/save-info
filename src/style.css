@@ -1,0 +1,337 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+
+:focus {
+    outline: 0;
+}
+
+body {
+    line-height: 1;
+    color: black;
+    background: white;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+caption,
+th,
+td {
+    text-align: left;
+    font-weight: normal;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+}
+
+blockquote,
+q {
+    quotes: "" "";
+}
+.modal {
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    transition-property: transform;
+    transition-duration: 3s;
+    animation-name: modal;
+    animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, -2.55);
+    animation-duration: 10s;
+    animation-delay: 3s;
+    animation-direction: unset;
+    transition-delay: 2s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 40px;
+    max-width: 488px;
+}
+.modal__close__button {
+        background-color: transparent;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        display: block;
+        width: 60px;
+        height: 30px;
+        fill: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 8px;
+        right: 8px;
+    }
+
+.modal__close__icon {
+        fill: black;
+        width: 16px;
+        transition-property: fill, background-color, color, box-shadow, opacity, border;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        height: 16px;
+    }
+
+    .modal__close__icon:hover {
+        fill: #188ce8;
+    }
+
+    .modal__title {
+        text-align: center;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.6px;
+    }
+
+    .modal__input {
+        max-width: 448px;
+        height: 40px;
+        border-radius: 4px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        padding-left: 35px;
+    }
+
+    .modal__input:focus {
+        outline: none;
+        border: 1px solid skyblue;
+    }
+
+    .modal__link {
+        color: skyblue;
+        text-decoration: underline !important;
+    }
+
+    .modal__button {
+        color: skyblue;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.87;
+        letter-spacing: 0.96px;
+        border-radius: 4px;
+        background-color: yellow;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        padding: 10px 52px;
+        margin: 0 auto;
+        display: block;
+        margin-top: 40px;
+        border-color: transparent;
+    }
+
+    .modal__text {
+        font-size: 14px;
+        font-weight: 400;
+        color: black;
+        line-height: 1.71;
+        letter-spacing: 0.42px;
+    }
+
+    .modal__name {
+        color: black;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.12px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .modal__icons {
+        position: absolute;
+        top: 32px;
+        left: 12px;
+        width: 14px;
+        height: 14px;
+        fill: black;
+    }
+
+    .modal__list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .modal__close__button:hover:focus {
+        background-color: orange;
+    }
+
+    .modal__comment:focus {
+        outline: none;
+        border: 1px solid blueviolet;
+    }
+
+    .modal__comment {
+        max-width: 448px;
+        height: 120px;
+        border-radius: 4px;
+        border: 1px solid skyblue;
+        padding: 12px 16px;
+        color: greenyellow;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 1.17;
+        letter-spacing: 0.12px;
+        resize: none;
+    }
+
+    .modal__coment::placeholder {
+        color: red;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.12px;
+    }
+
+    .modal__label {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .modal__icons:hover {
+        fill: pink;
+    }
+
+
+@keyframes modal {
+    0% {
+        background-color: white;
+        transform: scale(100%) rotate(400deg);
+    }
+
+    50% {
+        background-color: transparent;
+    }
+
+    100% {
+        background-color: white;
+    }
+}
+
+.backdrop {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.backdrop.is-hidden .modal {
+    transform: translate(-500%, -500%);
+}
+.button {
+    background-color: skyblue;
+    color: yellow;
+    font-size: 16px;
+    text-align: center;
+    animation-name: bg-box;
+    animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, -2.55);
+    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-direction: inherit;
+    font-weight: 700;
+    line-height: 1.88;
+    letter-spacing: 0.96px;
+    margin-top: 45px;
+}
+.but {
+    color: yellow;
+    background-color: skyblue;
+    border-radius: 10%;
+    padding: 10px 5px;
+}
