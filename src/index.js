@@ -51,13 +51,17 @@
     const user = { name, surname, phone, email };
     setLocalStorage(user);
   });
-  const sendBtn = document.querySelector('.modal__button[data-modal-close]');
+  const form = document.querySelector('.submit');
 
-sendBtn.addEventListener('click', () => {
+form.addEventListener('submit', (event) => {
   const name = document.getElementById('name').value;
   const surname = document.getElementById('phone').value;
   const phone = document.getElementById('email').value;
   const email = document.getElementById('comment').value;
   const user = { name, surname, phone, email };
   setLocalStorage(user);
+  event.target.elemets.name.value = '';
+  event.target.elemets.surname.value = '';
+  event.target.elemets.telephone.value = '';
+  event.target.elemets.email.value = '';
 });

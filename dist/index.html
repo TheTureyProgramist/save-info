@@ -17,40 +17,42 @@
             <h2 class="modal__title">
                 Залиште свої дані
             </h2>
-            <ul class="modal__list">
-                <li class="modal__item">
-                    <label for="name" class="modal__name">Ім'я
-                        <input id="name" type="text" class="modal__input" placeholder="Діма">
-                    </label>
+            <form class="submit">
+                <ul class="modal__list">
+                    <li class="modal__item">
+                        <label for="name" class="modal__name" name="name">Ім'я
+                            <input id="name" type="text" class="modal__input" placeholder="Діма">
+                        </label>
+                    </li>
+                    <li class="modal__item">
+                        <label for="phone" class="modal__name" name="surnamee">Прізвище
+                            <input id="phone" type="tel" class="modal__input" placeholder="Кириленко">
+                        </label>
+                    </li>
+                    <li class="modal__item">
+                        <label for="email" class="modal__name" name="telephone">Телефон
+                            <input id="email" type="phone" class="modal__input" placeholder="067 359-33-95">
+                        </label>
+                    </li>
+                    <li class="modal__item">
+                        <label for="comment" class="modal__name" type="email" name="email">Електорнна пошта
+                            <textarea id="comment" cols="30" rows="10" class="modal__comment" placeholder="theturkeyprogramist12@gmail.com"></textarea>
+                        </label>
+                    </li>
+                </ul>
+                <li class="modal__label">
+                    <button class="delete-info but">
+                    Видалити інформацію
+                    </button>
+                    <button class="plus-info but">
+                    Додати інформацію
+                    </button>
+                    <button class="redag-info but">
+                    Змінити інформацію
+                    </button>
                 </li>
-                <li class="modal__item">
-                    <label for="phone" class="modal__name">Прізвище
-                        <input id="phone" type="tel" class="modal__input" placeholder="Кириленко">
-                    </label>
-                </li>
-                <li class="modal__item">
-                    <label for="email" class="modal__name">Телефон
-                        <input id="email" type="email" class="modal__input" placeholder="067 359-33-95">
-                    </label>
-                </li>
-                <li class="modal__item">
-                    <label for="comment" class="modal__name">Електорнна пошта
-                        <textarea id="comment" cols="30" rows="10" class="modal__comment" placeholder="theturkeyprogramist12@gmail.com"></textarea>
-                    </label>
-                </li>
-            </ul>
-            <li class="modal__label">
-                <button class="delete-info but">
-                Видалити інформацію
-                </button>
-                <button class="plus-info but">
-                Додати інформацію
-                </button>
-                <button class="redag-info but">
-                Змінити інформацію
-                </button>
-            </li>
-            <button class="modal__button" type="button" data-modal-close="">Відправити</button>
+                <button class="modal__button" type="submit" data-modal-close="">Відправити</button>
+            </form>
         </div>
         <script type="module" src="/save-info.31b563d9.js"></script>
 </div>
